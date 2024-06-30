@@ -1,14 +1,8 @@
-
-
-/* background settings for section */
 #section-hero {background:url(../images/background/1.jpg) fixed;}
 #section-process {background:url(../images/background/2.jpg) fixed;}
 #section-team {background:url(../images/background/3.jpg) fixed;}
 #section-services {background:url(../images/background/4.jpg) fixed;}
-
 #section-contact.side-bg .background-image{background:url(../images/background/s1.jpg);}
-
-
 #section-hero-2 {background:url(../images/background/5.jpg) top;}
 #section-hero-3 {background:url(../images/background/6.jpg) fixed;}
 #section-hero-4 {background:url(../images/background/7.jpg) fixed;}
@@ -38,18 +32,12 @@
 #section-personal-contact.side-bg .background-image{background:url(../images/background/s1.jpg);}
 #section-personal-contact.side-bg .background-image{background:url(../images/background/s1.jpg);}
 #bg-login-4 {background:url(../images/background/19.jpg) top center;}
-
 #section-personal-1{background:url(../images/background/18.jpg) fixed;}
-
 #section-startup-hero{background:url(../images/background/21.jpg) fixed;}
 #section-startup-pricing{background:url(../images/background/22.jpg) fixed;}
 #section-startup-about{background:url(../images/background/24.jpg) center;}
 #section-startup-counter{background:url(../images/background/23.jpg) center;}
 #section-startup-download{background:url(../images/background/25.jpg) top center;}
-
-
-/* #subheader{background:url(../images/background/2.jpg);} */
-
 body.custom-bg-1{background:url(../images/background/none.jpg);
 -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -58,8 +46,6 @@ body.custom-bg-1{background:url(../images/background/none.jpg);
     background-position:center center;
     background-attachment:fixed;
 }
-
-/* media query */
 @media only screen and (min-device-width: 768) and (max-device-width: 1024) and (orientation: portrait){
 	section{
 	-webkit-background-size: auto 100%;
