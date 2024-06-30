@@ -1,6 +1,6 @@
 <?php
-$subject = 'You Got Message'; // Subject of your email
-$to = 'info@designesia.com';  //Recipient's E-mail
+$subject = 'You Got Message'; 
+$to = 'info@designesia.com';  
 $emailTo = $_REQUEST['email'];
 
 $name = $_REQUEST['name'];
@@ -12,7 +12,7 @@ $email_from = $name.'<'.$email.'>';
 
 $headers = "MIME-Version: 1.1";
 $headers .= "Content-type: text/html; charset=iso-8859-1";
-$headers .= "From: ".$name.'<'.$email.'>'."\r\n"; // Sender's E-mail
+$headers .= "From: ".$name.'<'.$email.'>'."\r\n"
 $headers .= "Return-Path:"."From:" . $email;
 
 $message .= 'Name : ' . $name . "\n";
