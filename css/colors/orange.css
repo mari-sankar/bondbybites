@@ -68,7 +68,7 @@ header.smaller.bg-color-sm,
 footer .tiny-border span,
 .owl-dot.active
 {
-	background-color:#a075b8 ;
+	background-color:#6c4f4f ;
 }
 
 #mainmenu li:hover > ul,
@@ -132,7 +132,7 @@ blockquote.s1:before,
 .post-meta span:before,
 footer .widget a:hover
 {
-	color:#a075b8;
+	color:#6c4f4f;
 }
 
 .feature-box i,
@@ -159,7 +159,7 @@ footer .widget a:hover
 .owl-item.active.center > div blockquote
 {
 
-	border-color:#a075b8 ;
+	border-color:#6c4f4f ;
 }
 
 .box-fx .inner,
@@ -176,39 +176,40 @@ footer .widget a:hover
 .text-light .separator span:after ,
 .form-underline input[type=text]:focus, .form-underline textarea:focus, .form-underline input[type=email]:focus, .form-underline select:focus
 {
-	border-bottom-color:#a075b8 ;
+	border-bottom-color:#6c4f4f ;
 }
 
 .arrow-down,
 .preloader1{
-	border-top-color:#a075b8 ;
+	border-top-color:#6c4f4f ;
 }
 
 .callbacks_nav {
-	background-color:#a075b8 ;
+	background-color:#6c4f4f ;
 }
 
 
 .de_tab .de_nav li span {
-border-top: 3px solid #a075b8 ;
+border-top: 3px solid #6c4f4f ;
 }
 
 .feature-box-big-icon i:after {
-border-color: #a075b8  transparent; /*same colour as the lower of the bubble's gradient*/
+border-color: #6c4f4f  transparent; /*same colour as the lower of the bubble's gradient*/
 }
 
 .de_review li.active img{
-	border:solid 4px #a075b8 ;
+	border:solid 4px #6c4f4f ;
 }
 
 .de_tab.tab_style_4 .de_nav li{
-border-right-color:#a075b8 ;
+border-right-color:#6c4f4f ;
 }
 
 blockquote{
-border-left-color:#a075b8;
+border-left-color:#6c4f4f;
 }
 
 .de_tab.tab_steps.style-2 .de_nav li.active .arrow{
-border-top-color:#a075b8;
+border-top-color:#6c4f4f;
 }
+/*#a075b8*/
