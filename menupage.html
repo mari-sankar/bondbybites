@@ -75,9 +75,9 @@
                     <input type="text" class="delivery-date" id="delivery-date" name="delivery-date" placeholder="dd / mm / yyyy" required>
                 </div>
                 <div class="btns">
-                    <button onclick="goToMenu()" class="menu-btn">Menu</button>
-                    <button onclick="goToCart()" class="cart-btn">Back to Cart</button>
-                    <button onclick="showReceipt()" class="submit-btn">Place your Order</button>
+                    <button type="button" onclick="goToMenu()" class="menu-btn">Menu</button>
+                    <button type="button" onclick="goToCart()" class="cart-btn">Back to Cart</button>
+                    <button type="button" onclick="showReceipt()" class="submit-btn">Place your Order</button>
                 </div>
             </form>
         </section>
@@ -89,7 +89,7 @@
             <p id="receipt-date"></p>
             <ul id="receipt-items"></ul>
             <p id="receipt-total"></p>
-            <!-- <button onclick="goToMenu()">Back to Menu</button> -->
+            <button onclick="goToMenu()">Back to Menu</button>
         </section>
         <div id="notification" class="notification">Please fill in all the details.</div>
     </main>
