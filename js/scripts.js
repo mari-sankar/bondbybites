@@ -133,6 +133,8 @@ function showReceipt() {
 
     receiptTotal.textContent = `Total: $${total.toFixed(2)}`;
 
+    cart = {};
+
     document.getElementById('order-form').classList.remove('active');
     document.getElementById('receipt').classList.add('active');
 }

@@ -2,97 +2,166 @@
 <html lang="zxx">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bond By Bites</title>
     <link rel="icon" href="images/small-logo.png">
     <meta name="description" content="Bondbybites - Taste the Love in Every Bites.">
     <meta name="keywords" content="business, cookies, creative, cupcake, brownies, cakes, modern, portfolio, website, bondbybites">
     <meta name="author" content="bondbybites, madhuvanti, marisankar">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+    <link rel="stylesheet" id="colors" href="css/colors/orange.css" type="text/css">
     <link rel="stylesheet" href="css/menupage.css">
 </head>
-<body>
-    <header>
-        <h1>Bakery Menu</h1>
+<body id="homepage">
+    <div id="wrapper">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="logo">
+                            <a href="index.html">
+                                <!-- <img class="logo" src="images/logo-light.png" alt="">
+                                <img class="logo-2" src="images/logo-dark.png" alt=""> -->
+                                <p class="logo">Bondbybites</p>
+                                <p class="logo-2">Bondbybites</p>
+                            </a>
+                        </div>
+                        <span id="menu-btn"></span>
+                        <nav>
+                            <ul id="mainmenu">
+                                <li><a href="index.html">Home<span></span></a></li>
+                                <li><a href="about.html">About us<span></span></a></li>
+                                <li><a href="services-image.html">Services<span></span></a></li>
+                                <li><a href="menupage.html">Menu<span></span></a></li>
+                                <li><a href="#">News<span></span></a>
+                                    <ul>
+                                        <li><a href="news-single.html">Latest</a></li>
+                                        <li><a href="news-big-image.html">History</a></li>
+                                    </ul>
+                                </li>
+                            <li><a href="team.html">Contact<span></span></a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </header>
+        <section id="subheader" class="dark no-top no-bottom" data-bgimage="url(images/background/bg-news.jpg) fixed" data-stellar-background-ratio=".2">
+            <div class="overlay-bg t80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>News</h1>
+                            <ul class="crumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="sep"></li>
+                                <li>News</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div id="cart-icon" onclick="toggleCartPopup()">🛒 Cart</div>
-    </header>
-    <main>
-        <section id="menu" class="active">
-            <h2>Our Menu</h2>
-            <div class="category" id="brownies">
-                <h3>Brownies</h3>
-                <div class="item">
-                    <span>Chocolate Brownie - $3.00</span>
-                    <button onclick="addToCart('Chocolate Brownie', 3)">Add to Cart</button>
+        <div class="main">
+            <section id="menu" class="active">
+                <h2>Our Menu</h2>
+                <div class="category" id="brownies">
+                    <h3>Brownies</h3>
+                    <div class="item">
+                        <span>Chocolate Brownie - $3.00</span>
+                        <button onclick="addToCart('Chocolate Brownie', 3)">Add to Cart</button>
+                    </div>
+                    <!-- Add more items as needed -->
                 </div>
-                <!-- Add more items as needed -->
+                <div class="category" id="cupcakes">
+                    <h3>Cupcakes</h3>
+                    <div class="item">
+                        <span>Vanilla Cupcake - $2.50</span>
+                        <button onclick="addToCart('Vanilla Cupcake', 2.5)">Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <span>Chocolate - $3.00</span>
+                        <button onclick="addToCart('Chocolate', 3)">Add to Cart</button>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+                <button onclick="goToCart()">Continue</button>
+                <!-- Add more categories as needed -->
+            </section>    
+            <section id="cart">
+                <h2>Your Order</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Total: $0.00</p>
+                <button onclick="goToMenu()">Back to Menu</button>
+                <button onclick="placeOrder()">Continue with order</button>
+            </section>
+            <div id="cart-popup">
+                <h2>Your Cart</h2>
+                <ul id="popup-cart-items"></ul>
             </div>
-            <div class="category" id="cupcakes">
-                <h3>Cupcakes</h3>
-                <div class="item">
-                    <span>Vanilla Cupcake - $2.50</span>
-                    <button onclick="addToCart('Vanilla Cupcake', 2.5)">Add to Cart</button>
-                </div>
-                <div class="item">
-                    <span>Chocolate - $3.00</span>
-                    <button onclick="addToCart('Chocolate', 3)">Add to Cart</button>
-                </div>
-                <!-- Add more items as needed -->
-            </div>
-            <button onclick="goToCart()">Continue</button>
-            <!-- Add more categories as needed -->
-        </section>
-
-        <section id="cart">
-            <h2>Your Order</h2>
-            <ul id="cart-items"></ul>
-            <p id="total-price">Total: $0.00</p>
-            <button onclick="goToMenu()">Back to Menu</button>
-            <button onclick="placeOrder()">Continue with order</button>
-        </section>
-        
-        <div id="cart-popup">
-            <h2>Your Cart</h2>
-            <ul id="popup-cart-items"></ul>
+            <div id="notification">Please choose a product</div>
+            <section id="order-form">
+                <h2>Order Details</h2>
+                <form id="order-forms" class="order-forms">
+                    <div class="details">
+                        <label for="name">Name : </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="details">
+                        <label for="address">Address : </label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="details">
+                        <label for="phone">Phone : </label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="details">
+                        <label for="date">Delivery Date : </label>
+                        <input type="text" class="delivery-date" id="delivery-date" name="delivery-date" placeholder="dd / mm / yyyy" required>
+                    </div>
+                    <div class="btns">
+                        <button type="button" onclick="goToMenu()" class="menu-btn">Menu</button>
+                        <button type="button" onclick="goToCart()" class="cart-btn">Back to Cart</button>
+                        <button type="button" onclick="showReceipt()" class="submit-btn">Place your Order</button>
+                    </div>
+                </form>
+            </section>
+            <section id="receipt">
+                <h2>Receipt</h2>
+                <p id="receipt-name"></p>
+                <p id="receipt-address"></p>
+                <p id="receipt-phone"></p>
+                <p id="receipt-date"></p>
+                <ul id="receipt-items"></ul>
+                <p id="receipt-total"></p>
+                <button onclick="goToMenu()">Back to Menu</button>
+            </section>
+            <div id="notification" class="notification">Please fill in all the details.</div>
         </div>
-        <div id="notification">Please choose a product</div>
-        <section id="order-form">
-            <h2>Order Details</h2>
-            <form id="order-forms" class="order-forms">
-                <div class="details">
-                    <label for="name">Name : </label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="details">
-                    <label for="address">Address : </label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-                <div class="details">
-                    <label for="phone">Phone : </label>
-                    <input type="text" id="phone" name="phone" required>
-                </div>
-                <div class="details">
-                    <label for="date">Delivery Date : </label>
-                    <input type="text" class="delivery-date" id="delivery-date" name="delivery-date" placeholder="dd / mm / yyyy" required>
-                </div>
-                <div class="btns">
-                    <button type="button" onclick="goToMenu()" class="menu-btn">Menu</button>
-                    <button type="button" onclick="goToCart()" class="cart-btn">Back to Cart</button>
-                    <button type="button" onclick="showReceipt()" class="submit-btn">Place your Order</button>
-                </div>
-            </form>
-        </section>
-        <section id="receipt">
-            <h2>Receipt</h2>
-            <p id="receipt-name"></p>
-            <p id="receipt-address"></p>
-            <p id="receipt-phone"></p>
-            <p id="receipt-date"></p>
-            <ul id="receipt-items"></ul>
-            <p id="receipt-total"></p>
-            <button onclick="goToMenu()">Back to Menu</button>
-        </section>
-        <div id="notification" class="notification">Please fill in all the details.</div>
-    </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/typed-custom.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/designesia.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
