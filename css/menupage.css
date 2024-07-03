@@ -1,6 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
+    min-height: 600px;
+    background: #f2f2f2;
+    /* overflow-x: hidden; */
 }
 .main {
     font-family: Arial, sans-serif;
@@ -13,8 +16,12 @@ body {
     background-color: transparent;
 }
 #cart {
-    width: 60%;
-    margin: 2rem 0;
+    width: 40%;
+    min-width: 300px;
+    max-width: 400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h2 {
     font-size: 28px;
@@ -32,31 +39,39 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .category h3 {
     margin: 0 0 1rem 0;
 }
-
+.quantity-controls {
+    display: inline-block;
+    margin-left: 10px;
+}
 .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0;
 }
-button {
+.btns{
     padding: 0.5rem 1rem;
-    background-color: #927171;
+    background-color: #765858;
     color: white;
+    border-radius: 6px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-button:hover {
-    background-color: #6c4f4f;
+.btns:focus {
+    outline: none;
 }
-
+.btns:hover{
+    /* border: 1px solid #5b3e31; */
+    background-color: #5b3e31;
+}
+.continue-btn{
+    float: right;
+    margin-right: 10px;
+}
 #cart {
     background-color: #ffffff;
     padding: 1rem;
@@ -80,12 +95,6 @@ button:hover {
     margin-top: 1rem;
 }
 
-#menu, #cart {
-    display: none;
-}
-#menu.active, #cart.active {
-    display: block;
-}
 #cart-popup {
     display: none;
     position: fixed;
@@ -107,16 +116,6 @@ button:hover {
     padding: 0.5rem 0;
     list-style-type: none;
 }
-
-#back-button {
-    margin: 20px 0;
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #2d1b5a;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-}
 #notification {
     display: none;
     position: fixed;
@@ -127,12 +126,6 @@ button:hover {
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-}
-#order-form{
-    display: none;
-}
-#order-form.active{
-    display: block;
 }
 .order-forms{
     background-color: #fff;
@@ -150,21 +143,12 @@ button:hover {
     width: 300px;
     font-size: 18px;
 }
-.btns{
-    padding: 15px;
-}
 .menu-btn{
     float: left;
     margin-right: 15px;
 }
-.submit-btn{
-    float: right;
-}
-#receipt{
-    display: none;
-}
-#receipt.active{
-    display: block;
+#receipt-items{
+    list-style-type: none;
 }
 
 @media (max-width: 600px) {
