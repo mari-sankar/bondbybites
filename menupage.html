@@ -49,46 +49,146 @@
                 </div>
             </div>
         </header>
-        <section id="subheader" class="dark no-top no-bottom" data-bgimage="url(images/background/bg-news.jpg) fixed" data-stellar-background-ratio=".2">
-            <div class="overlay-bg t80">
-                <div class="container">
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="list">
+                <div class="category-items">
+                    <div class="category" id="brownies">
+                        <h3>Brownies</h3>
+                        <div class="item">
+                            <span>Chocolate Brownie - $3.00</span>
+                            <button class="btns" onclick="addToCart('Chocolate Brownie', 3)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="category" id="cupcakes">
+                        <h3>Cupcakes</h3>
+                        <div class="item">
+                            <span>Vanilla Cupcake - $2.50</span>
+                            <button class="btns" onclick="addToCart('Vanilla Cupcake', 2.5)">Add to Cart</button>
+                        </div>
+                        <div class="item">
+                            <span>Chocolate - $3.00</span>
+                            <button class="btns" onclick="addToCart('Chocolate', 3)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="category" id="cupcakes">
+                        <h3>Cupcakes</h3>
+                        <div class="item">
+                            <span>Vanilla Cupcake - $2.50</span>
+                            <button class="btns" onclick="addToCart('Vanilla Cupcake', 2.5)">Add to Cart</button>
+                        </div>
+                        <div class="item">
+                            <span>Chocolate - $3.00</span>
+                            <button class="btns" onclick="addToCart('Chocolate', 3)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="category" id="cupcakes">
+                        <h3>Cupcakes</h3>
+                        <div class="item">
+                            <span>Vanilla Cupcake - $2.50</span>
+                            <button class="btns" onclick="addToCart('Vanilla Cupcake', 2.5)">Add to Cart</button>
+                        </div>
+                        <div class="item">
+                            <span>Chocolate - $3.00</span>
+                            <button class="btns" onclick="addToCart('Chocolate', 3)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="category" id="cupcakes">
+                        <h3>Cupcakes</h3>
+                        <div class="item">
+                            <span>Vanilla Cupcake - $2.50</span>
+                            <button class="btns" onclick="addToCart('Vanilla Cupcake', 2.5)">Add to Cart</button>
+                        </div>
+                        <div class="item">
+                            <span>Chocolate - $3.00</span>
+                            <button class="btns" onclick="addToCart('Chocolate', 3)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn btns" onclick="goToCart()">Continue</button>
+            </div>
+        </section>
+        <!-- footer begin -->
+        <footer>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+						<div class="widget">
+                            <h5>About Bond by bites</h5>
+							<div class="tiny-border"><span></span></div>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 offset-md-2">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-4">
+                                <div class="widget">
+                                    <h5>Company</h5>
+									<div class="tiny-border"><span></span></div>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Customers</a></li>
+                                        <li><a href="#">Jobs</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-xs-4">
+                                <div class="widget">
+                                    <h5>Services</h5>
+									<div class="tiny-border"><span></span></div>
+                                    <ul>
+                                        <li><a href="#">Web Design</a></li>
+                                        <li><a href="#">Development</a></li>
+                                        <li><a href="#">Animation</a></li>
+                                        <li><a href="#">Mobile Apps</a></li>
+                                        <li><a href="#">Campaign</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-xs-4">
+                                <div class="widget">
+                                    <h5>Help &amp; Support</h5>
+									<div class="tiny-border"><span></span></div>
+                                    <ul>
+                                        <li><a href="#">Help Center</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Live Chat</a></li>
+                                        <li><a href="#">Terms of Services</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="subfooter">
+                <div class="container text-center">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>News</h1>
-                            <ul class="crumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="sep"></li>
-                                <li>News</li>
-                            </ul>
+                            &copy; Copyright 2024 - Bond By Bites
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="main">
-            <section id="menu">
-                <h2>Our Menu</h2>
-                <div class="category" id="brownies">
-                    <h3>Brownies</h3>
-                    <div class="item">
-                        <span>Chocolate Brownie - $3.00</span>
-                        <button class="btns" onclick="addToCart('Chocolate Brownie', 3)">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="category" id="cupcakes">
-                    <h3>Cupcakes</h3>
-                    <div class="item">
-                        <span>Vanilla Cupcake - $2.50</span>
-                        <button class="btns" onclick="addToCart('Vanilla Cupcake', 2.5)">Add to Cart</button>
-                    </div>
-                    <div class="item">
-                        <span>Chocolate - $3.00</span>
-                        <button class="btns" onclick="addToCart('Chocolate', 3)">Add to Cart</button>
-                    </div>
-                </div>
-                <button class="continue-btn btns" onclick="goToCart()">Continue</button>
-            </section>
-        </div>
+        </footer>
+        <!-- footer close -->
+
+        <a href="#" id="back-to-top"></a>
+        <div id="preloader">
+            <div class="s1">
+                <span></span>
+                <span></span>
+            </div>
+        </div>   
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

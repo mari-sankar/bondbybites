@@ -3,21 +3,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bond By Bites - Your Cart</title>
+    <title>Bond By Bites</title>
     <link rel="icon" href="images/small-logo.png">
+    <meta name="description" content="Bondbybites - Taste the Love in Every Bites.">
+    <meta name="keywords" content="business, cookies, creative, cupcake, brownies, cakes, modern, portfolio, website, bondbybites">
+    <meta name="author" content="bondbybites, madhuvanti, marisankar">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+    <link rel="stylesheet" id="colors" href="css/colors/orange.css" type="text/css">
     <link rel="stylesheet" href="css/menupage.css">
 </head>
-<body>
-    <main>
-        <section id="cart">
-            <h2>Your Order</h2>
-            <ul id="cart-items"></ul>
-            <p id="total-price">Total: $0.00</p>
-            <button class="back-btn btns" onclick="goToMenu()">Back to Menu</button>
-            <button class="continue-btn btns" onclick="placeOrder()">Continue with order</button>
-        </section>
-        <div id="notification">Please choose a product</div>
-    </main>
+<body id="homepage">
+    <div id="wrapper">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="logo">
+                            <a href="index.html">
+                                <!-- <img class="logo" src="images/logo-light.png" alt="">
+                                <img class="logo-2" src="images/logo-dark.png" alt=""> -->
+                                <p class="logo">Bondbybites</p>
+                                <p class="logo-2">Bondbybites</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="cart" style="height: 100vh; overflow-y: auto;">
+            <div class="container-cart">
+                <h2>Your Order</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Total: $0.00</p>
+                <button class="back-btn btns" onclick="goToMenu()">Back to Menu</button>
+                <button class="continue-btn btns" onclick="placeOrder()">Continue with order</button>
+                <div id="notification">Please choose a product</div>
+            </div>
+        </section>   
+    </div> 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/designesia.js"></script>
     <script src="js/cart.js" defer></script>
 </body>
 </html>

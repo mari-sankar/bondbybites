@@ -14,8 +14,8 @@ function renderCart() {
         li.innerHTML = `
             ${item} - $${price.toFixed(2)} x ${quantity} = $${value.toFixed(2)}
             <div class="quantity-controls">
-                <button onclick="removeFromCart('${item}')">-</button>
-                <button onclick="addToCart('${item}', ${price})">+</button>
+                <button class="quantity-d" onclick="removeFromCart('${item}')">-</button>
+                <button class="quantity-i" onclick="addToCart('${item}', ${price})">+</button>
             </div>
         `;
         cartItems.appendChild(li);
