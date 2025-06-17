@@ -49,7 +49,7 @@ function placeOrder() {
         setTimeout(hideNotification, 3000);
         return;
     }
-    window.location.href = 'orderdetail.html';
+    window.location.href = 'error.html';
 }
 
 function goToMenu() {
